@@ -32,8 +32,43 @@ public interface Bag<T> {
      */
     public boolean add(T item);
 
+    /**
+     * Removes no particular object from the bag
+     * @return the object to be removed
+     */
+    public T remove();
 
+    /**
+     * Removes an occurrence of a particular object from the bag
+     * @param item
+     * @return true if the occurrence of the object is removed
+     */
+    public boolean remove(T item);
 
+    /**
+     * Removes all items from the bag
+     * @return true if the bag is cleared
+     */
+    public boolean clear();
 
+    /**
+     * Counts the number of occurrences of a particular object
+     * @param item
+     * @return the number of times a particular object appears in the bag
+     */
+    public int count(T item);
+
+    /**
+     * Checks if the bag contains the specified object
+     * @param item
+     * @return true if the bag contains the object
+     */
+    public boolean contains(T item);
+
+    /**
+     * Returns an array of all the entries
+     * @return an array of all the bag items
+     */
+    public T[] toArray();
 
 }
